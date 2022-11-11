@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BD78C140291F0CD6005CB910 /* ART.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD78C13F291F0CD6005CB910 /* ART.swift */; };
+		BD78C143291F0E52005CB910 /* Experience.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = BD78C142291F0E51005CB910 /* Experience.rcproject */; };
 		BD78C41A291D79E10070C2E0 /* Big_Robot_Micro_Client_ServicesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD78C419291D79E10070C2E0 /* Big_Robot_Micro_Client_ServicesApp.swift */; };
 		BD78C41C291D79E10070C2E0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD78C41B291D79E10070C2E0 /* ContentView.swift */; };
 		BD78C41E291D79E40070C2E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD78C41D291D79E40070C2E0 /* Assets.xcassets */; };
@@ -25,6 +27,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BD78C13F291F0CD6005CB910 /* ART.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ART.swift; sourceTree = "<group>"; };
+		BD78C142291F0E51005CB910 /* Experience.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = Experience.rcproject; sourceTree = "<group>"; };
 		BD78C416291D79E10070C2E0 /* Big Robot Micro Client Services.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Big Robot Micro Client Services.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD78C419291D79E10070C2E0 /* Big_Robot_Micro_Client_ServicesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Big_Robot_Micro_Client_ServicesApp.swift; sourceTree = "<group>"; };
 		BD78C41B291D79E10070C2E0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -54,6 +58,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BD78C141291F0E51005CB910 /* AugmentedReality */ = {
+			isa = PBXGroup;
+			children = (
+				BD78C142291F0E51005CB910 /* Experience.rcproject */,
+			);
+			path = AugmentedReality;
+			sourceTree = "<group>";
+		};
 		BD78C40D291D79E10070C2E0 = {
 			isa = PBXGroup;
 			children = (
@@ -73,6 +85,7 @@
 		BD78C418291D79E10070C2E0 /* Big Robot Micro Client Services */ = {
 			isa = PBXGroup;
 			children = (
+				BD78C141291F0E51005CB910 /* AugmentedReality */,
 				BDF89A1A291DF031000CD49F /* Extensions */,
 				BDD22F12291DC92B008DABE8 /* MainContentViews */,
 				BD898B5B291D7DBD00C311DC /* CustViews */,
@@ -112,6 +125,7 @@
 				BDD22F15291DD020008DABE8 /* BLEPage.swift */,
 				BDD22F17291DD067008DABE8 /* GraphDemosView.swift */,
 				BDC6EE7D291DDDF20086F0DB /* WeatherMockView.swift */,
+				BD78C13F291F0CD6005CB910 /* ART.swift */,
 			);
 			path = MainContentViews;
 			sourceTree = "<group>";
@@ -205,6 +219,8 @@
 				BD78C426291D79E40070C2E0 /* Big_Robot_Micro_Client_Services.xcdatamodeld in Sources */,
 				BDD22F0F291DC059008DABE8 /* OnboarderContainerView.swift in Sources */,
 				BDF89A1C291DF046000CD49F /* View+Extension.swift in Sources */,
+				BD78C143291F0E52005CB910 /* Experience.rcproject in Sources */,
+				BD78C140291F0CD6005CB910 /* ART.swift in Sources */,
 				BD78C41C291D79E10070C2E0 /* ContentView.swift in Sources */,
 				BD78C41A291D79E10070C2E0 /* Big_Robot_Micro_Client_ServicesApp.swift in Sources */,
 			);
@@ -338,6 +354,7 @@
 				DEVELOPMENT_TEAM = 669VG3KZR8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "AR Camera Permission";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -368,6 +385,7 @@
 				DEVELOPMENT_TEAM = 669VG3KZR8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "AR Camera Permission";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

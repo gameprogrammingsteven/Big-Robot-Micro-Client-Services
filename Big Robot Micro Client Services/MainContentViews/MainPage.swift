@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import ARKit
 
 struct MainPage: View {
     @State var bobbing: Bool = false
@@ -47,6 +48,11 @@ struct MainPage: View {
                         NavigationLink(destination: WeatherMockView()) {
                             Text("Fake Weather Demo Page")
                         }
+//                        if (ARConfiguration.isSupported) {
+//                            NavigationLink(destination: ART()) {
+//                                Text("Fake ARTest")
+//                            }
+//                        }
 
                     }
                     .frame(maxHeight: 300)
