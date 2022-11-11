@@ -17,6 +17,9 @@
 		BDD22F0D291D9135008DABE8 /* ValueOnboardingVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD22F0C291D9135008DABE8 /* ValueOnboardingVM.swift */; };
 		BDD22F0F291DC059008DABE8 /* OnboarderContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD22F0E291DC059008DABE8 /* OnboarderContainerView.swift */; };
 		BDD22F11291DC869008DABE8 /* MainPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD22F10291DC869008DABE8 /* MainPage.swift */; };
+		BDD22F14291DCB32008DABE8 /* SettingsPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD22F13291DCB32008DABE8 /* SettingsPage.swift */; };
+		BDD22F16291DD020008DABE8 /* BLEPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD22F15291DD020008DABE8 /* BLEPage.swift */; };
+		BDD22F18291DD067008DABE8 /* GraphDemosView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD22F17291DD067008DABE8 /* GraphDemosView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +34,9 @@
 		BDD22F0C291D9135008DABE8 /* ValueOnboardingVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValueOnboardingVM.swift; sourceTree = "<group>"; };
 		BDD22F0E291DC059008DABE8 /* OnboarderContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboarderContainerView.swift; sourceTree = "<group>"; };
 		BDD22F10291DC869008DABE8 /* MainPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPage.swift; sourceTree = "<group>"; };
+		BDD22F13291DCB32008DABE8 /* SettingsPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsPage.swift; sourceTree = "<group>"; };
+		BDD22F15291DD020008DABE8 /* BLEPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BLEPage.swift; sourceTree = "<group>"; };
+		BDD22F17291DD067008DABE8 /* GraphDemosView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphDemosView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +103,9 @@
 			children = (
 				BDD22F10291DC869008DABE8 /* MainPage.swift */,
 				BDD22F0E291DC059008DABE8 /* OnboarderContainerView.swift */,
+				BDD22F13291DCB32008DABE8 /* SettingsPage.swift */,
+				BDD22F15291DD020008DABE8 /* BLEPage.swift */,
+				BDD22F17291DD067008DABE8 /* GraphDemosView.swift */,
 			);
 			path = MainContentViews;
 			sourceTree = "<group>";
@@ -171,8 +180,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BDD22F14291DCB32008DABE8 /* SettingsPage.swift in Sources */,
 				BD898B5D291D7E1B00C311DC /* ValueOnboarding.swift in Sources */,
+				BDD22F16291DD020008DABE8 /* BLEPage.swift in Sources */,
 				BDD22F0D291D9135008DABE8 /* ValueOnboardingVM.swift in Sources */,
+				BDD22F18291DD067008DABE8 /* GraphDemosView.swift in Sources */,
 				BD78C423291D79E40070C2E0 /* Persistence.swift in Sources */,
 				BDD22F11291DC869008DABE8 /* MainPage.swift in Sources */,
 				BD78C426291D79E40070C2E0 /* Big_Robot_Micro_Client_Services.xcdatamodeld in Sources */,
