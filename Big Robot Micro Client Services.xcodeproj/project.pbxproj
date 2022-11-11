@@ -13,6 +13,10 @@
 		BD78C421291D79E40070C2E0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD78C420291D79E40070C2E0 /* Preview Assets.xcassets */; };
 		BD78C423291D79E40070C2E0 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD78C422291D79E40070C2E0 /* Persistence.swift */; };
 		BD78C426291D79E40070C2E0 /* Big_Robot_Micro_Client_Services.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BD78C424291D79E40070C2E0 /* Big_Robot_Micro_Client_Services.xcdatamodeld */; };
+		BD898B5D291D7E1B00C311DC /* ValueOnboarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD898B5C291D7E1B00C311DC /* ValueOnboarding.swift */; };
+		BDD22F0D291D9135008DABE8 /* ValueOnboardingVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD22F0C291D9135008DABE8 /* ValueOnboardingVM.swift */; };
+		BDD22F0F291DC059008DABE8 /* OnboarderContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD22F0E291DC059008DABE8 /* OnboarderContainerView.swift */; };
+		BDD22F11291DC869008DABE8 /* MainPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD22F10291DC869008DABE8 /* MainPage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +27,10 @@
 		BD78C420291D79E40070C2E0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		BD78C422291D79E40070C2E0 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		BD78C425291D79E40070C2E0 /* Big_Robot_Micro_Client_Services.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Big_Robot_Micro_Client_Services.xcdatamodel; sourceTree = "<group>"; };
+		BD898B5C291D7E1B00C311DC /* ValueOnboarding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValueOnboarding.swift; sourceTree = "<group>"; };
+		BDD22F0C291D9135008DABE8 /* ValueOnboardingVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValueOnboardingVM.swift; sourceTree = "<group>"; };
+		BDD22F0E291DC059008DABE8 /* OnboarderContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboarderContainerView.swift; sourceTree = "<group>"; };
+		BDD22F10291DC869008DABE8 /* MainPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +63,8 @@
 		BD78C418291D79E10070C2E0 /* Big Robot Micro Client Services */ = {
 			isa = PBXGroup;
 			children = (
+				BDD22F12291DC92B008DABE8 /* MainContentViews */,
+				BD898B5B291D7DBD00C311DC /* CustViews */,
 				BD78C419291D79E10070C2E0 /* Big_Robot_Micro_Client_ServicesApp.swift */,
 				BD78C41B291D79E10070C2E0 /* ContentView.swift */,
 				BD78C41D291D79E40070C2E0 /* Assets.xcassets */,
@@ -71,6 +81,24 @@
 				BD78C420291D79E40070C2E0 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		BD898B5B291D7DBD00C311DC /* CustViews */ = {
+			isa = PBXGroup;
+			children = (
+				BD898B5C291D7E1B00C311DC /* ValueOnboarding.swift */,
+				BDD22F0C291D9135008DABE8 /* ValueOnboardingVM.swift */,
+			);
+			path = CustViews;
+			sourceTree = "<group>";
+		};
+		BDD22F12291DC92B008DABE8 /* MainContentViews */ = {
+			isa = PBXGroup;
+			children = (
+				BDD22F10291DC869008DABE8 /* MainPage.swift */,
+				BDD22F0E291DC059008DABE8 /* OnboarderContainerView.swift */,
+			);
+			path = MainContentViews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,8 +171,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD898B5D291D7E1B00C311DC /* ValueOnboarding.swift in Sources */,
+				BDD22F0D291D9135008DABE8 /* ValueOnboardingVM.swift in Sources */,
 				BD78C423291D79E40070C2E0 /* Persistence.swift in Sources */,
+				BDD22F11291DC869008DABE8 /* MainPage.swift in Sources */,
 				BD78C426291D79E40070C2E0 /* Big_Robot_Micro_Client_Services.xcdatamodeld in Sources */,
+				BDD22F0F291DC059008DABE8 /* OnboarderContainerView.swift in Sources */,
 				BD78C41C291D79E10070C2E0 /* ContentView.swift in Sources */,
 				BD78C41A291D79E10070C2E0 /* Big_Robot_Micro_Client_ServicesApp.swift in Sources */,
 			);
@@ -281,8 +313,8 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -310,8 +342,8 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
