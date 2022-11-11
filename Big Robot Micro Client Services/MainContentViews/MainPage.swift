@@ -35,14 +35,17 @@ struct MainPage: View {
                 
                 Spacer(minLength: 100)
                     List {
-                        NavigationLink(destination: SettingsPage()) {
-                            Text("Set")
-                        }
+//                        NavigationLink(destination: SettingsPage()) {
+//                            Text("Set")
+//                        }
                         NavigationLink(destination: BLEPage()) {
                             Text("Bluetooth")
                         }
                         NavigationLink(destination: GraphDemosView()) {
                             Text("Graphs")
+                        }
+                        NavigationLink(destination: WeatherMockView()) {
+                            Text("Fake Weather Demo Page")
                         }
 
                     }

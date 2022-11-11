@@ -63,13 +63,12 @@ struct ValueOnboarding: View, Identifiable {
                             .overlay(alignment: .center) {
                                 HStack {
                                     Text("Next")
-                                        .font(.title3)
+                                        .font(.title3).fontWeight(.bold)
                                         .foregroundColor(Color.init(red: 1.0, green: 0.88, blue: 0.9))
                                     
                                     Image(systemName: "arrowshape.right")
                                         .foregroundColor(.white)
                                 }
-                                .fontWeight(.bold)
                                 .foregroundColor(.gray)
                                 
                             }
@@ -93,10 +92,11 @@ struct ValueOnboarding: View, Identifiable {
                             HStack {
                                 Text("SKIP")
                                     .font(.title3)
+                                    .fontWeight(.bold)
+
                                     .foregroundColor(.red)
                                 //                                Image(systemName: "arrowshape.right")
                             }
-                            .fontWeight(.bold)
                             .foregroundColor(.gray)
                         }
                     
