@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BD06CA3E2926EF0B001210A9 /* BLEControls.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD06CA3D2926EF0B001210A9 /* BLEControls.swift */; };
 		BD78C140291F0CD6005CB910 /* ART.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD78C13F291F0CD6005CB910 /* ART.swift */; };
 		BD78C143291F0E52005CB910 /* Experience.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = BD78C142291F0E51005CB910 /* Experience.rcproject */; };
 		BD78C41A291D79E10070C2E0 /* Big_Robot_Micro_Client_ServicesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD78C419291D79E10070C2E0 /* Big_Robot_Micro_Client_ServicesApp.swift */; };
@@ -34,6 +35,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BD06CA3D2926EF0B001210A9 /* BLEControls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BLEControls.swift; sourceTree = "<group>"; };
 		BD27E1112926C761003911C8 /* Big-Robot-Micro-Client-Services-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Big-Robot-Micro-Client-Services-Info.plist"; sourceTree = SOURCE_ROOT; };
 		BD78C13F291F0CD6005CB910 /* ART.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ART.swift; sourceTree = "<group>"; };
 		BD78C142291F0E51005CB910 /* Experience.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = Experience.rcproject; sourceTree = "<group>"; };
@@ -73,6 +75,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BD06CA3C2926EEE7001210A9 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				BD06CA3D2926EF0B001210A9 /* BLEControls.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
 		BD78C141291F0E51005CB910 /* AugmentedReality */ = {
 			isa = PBXGroup;
 			children = (
@@ -100,6 +110,7 @@
 		BD78C418291D79E10070C2E0 /* Big Robot Micro Client Services */ = {
 			isa = PBXGroup;
 			children = (
+				BD06CA3C2926EEE7001210A9 /* Utility */,
 				BD27E1112926C761003911C8 /* Big-Robot-Micro-Client-Services-Info.plist */,
 				BDD8FED3291F597900DBCBEB /* Resources */,
 				BD78C141291F0E51005CB910 /* AugmentedReality */,
@@ -257,6 +268,7 @@
 				BDD22F14291DCB32008DABE8 /* SettingsPage.swift in Sources */,
 				BDC6EE7E291DDDF20086F0DB /* WeatherMockView.swift in Sources */,
 				BD898B5D291D7E1B00C311DC /* ValueOnboarding.swift in Sources */,
+				BD06CA3E2926EF0B001210A9 /* BLEControls.swift in Sources */,
 				BDD22F16291DD020008DABE8 /* BLEPage.swift in Sources */,
 				BDD22F0D291D9135008DABE8 /* ValueOnboardingVM.swift in Sources */,
 				BDD22F18291DD067008DABE8 /* GraphDemosView.swift in Sources */,

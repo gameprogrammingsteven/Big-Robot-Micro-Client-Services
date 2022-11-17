@@ -88,14 +88,26 @@ struct MainPage: View {
                                     .fontWeight(.bold)
                                     .foregroundColor(.black)
                                     .padding()
-//                                    .frame(width:190)
-                                    .minimumScaleFactor(0.4)
+//                                    .minimumScaleFactor(0.7)
                                 
                                 Spacer()
                                 Image(systemName:"chevron.compact.right").padding().foregroundColor(.gray).scaleEffect(1.6)
                             }
                             .frame(minHeight: 32)
                         }
+                        
+                        NavigationLink(destination: BLEPage()) {
+                            HStack(alignment: .center) {
+                                Text("Nearby BLE List")
+                                    .fontWeight(.bold)
+                                    .foregroundColor(.black)
+                                    .padding()
+                                Spacer()
+                                Image(systemName:"chevron.compact.right").padding().foregroundColor(.gray).scaleEffect(1.6)
+                                
+                            }
+                            .frame(minHeight: 32)
+                        }.buttonStyle(.borderless)
                        
                     }
                     .background(Color.init(white: 1 , opacity: 0.3))
