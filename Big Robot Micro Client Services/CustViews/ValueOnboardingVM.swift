@@ -16,14 +16,14 @@ extension ValueOnboardingVMList {
     static func getAll() -> [ValueOnboardingVM] {
         return [
             ValueOnboardingVM(title: "Add value to your business with an app."
-                              , subHeader: "Add an onboard screen like this one."
-                              , imageName: ""),
-            ValueOnboardingVM(title: "Show your customers how to use your app with this: Onboarding",
-                              subHeader: "Add an onboard screen like this one.",
-                              imageName: ""),
-            ValueOnboardingVM(title: "Show your customers how to use your app with this: Onboarding",
-                              subHeader: "Add an onboard screen like this one.",
-                              imageName: "",
+                              , subHeader: "Your images go here."
+                              , imageName: "app2_2048"),
+            ValueOnboardingVM(title: "Add an onboard screen like this",
+                              subHeader: "And show customers what it does",
+                              imageName: "app2_2048"),
+            ValueOnboardingVM(title: "Let's Get Moving",
+                              subHeader: "",
+                              imageName: "brm",
                              showsNextButton: false)
         ]
 

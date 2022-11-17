@@ -19,31 +19,47 @@ struct ValueOnboarding: View, Identifiable {
 
     var body: some View {
         VStack {
+            Spacer()
             Text("Welcome")
                 .font(.custom("Arial", size: 48))
             //                .foregroundColor(Color.init(red: 150.0/255.0, green: 150.0/255.0, blue: 150.0/255.0))
                 .foregroundColor(Color.init(red: 0.23, green: 0.23, blue: 0.23))
             
                 .fontWeight(.bold)
+//                .padding(EdgeInsets(top: 15, leading: 0, bottom: 0, trailing: 15))
             
             Text(valueOnboardingVM.title)
                 .font(.title)
                 .fontWeight(.bold)
+                .lineLimit(nil)
+                .fixedSize(horizontal: true, vertical: false)
                 .foregroundColor(.white)
                 .multilineTextAlignment(.center)
                 .padding(EdgeInsets(top: 20, leading: 16, bottom: 16, trailing: 16))
                 .shadow(radius: 2, x:4, y:4)
+                .frame(width:UIScreen.main.bounds.width)
+
             
             (valueOnboardingVM.subHeader.isEmpty ? nil :
                 Text(valueOnboardingVM.subHeader)
                 .font(.title3)
                 .fontWeight(.semibold)
+                .lineLimit(nil)
+                .fixedSize(horizontal: true, vertical: false)
                 .foregroundColor(.white)
                 .multilineTextAlignment(.center)
                 .padding(EdgeInsets(top: 20, leading: 16, bottom: 16, trailing: 16))
+                .frame(width:UIScreen.main.bounds.width)
             )// if statement
             
-            
+            Spacer()
+            (valueOnboardingVM.imageName.isEmpty ? nil :
+                Image(valueOnboardingVM.imageName)
+                .resizable()
+                .frame(width: 225, height: 225)
+                .aspectRatio(contentMode: .fit)
+                .padding(EdgeInsets(top: 10, leading: 33, bottom: 20, trailing: 33))
+                )
             Spacer()
             
             VStack {
@@ -114,7 +130,8 @@ struct ValueOnboarding: View, Identifiable {
             
             
         }
-        .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity)
+        .padding()
+        .frame(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height - 20)
         .background(.linearGradient(colors: [Color("PrimaryBG"), Color.init(red: 0.0, green: 0, blue: 0.87)], startPoint: .top, endPoint: .bottom))
         .cornerRadius(20)
     }

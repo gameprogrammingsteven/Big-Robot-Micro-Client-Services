@@ -26,11 +26,12 @@ struct OnboarderContainerView: View {
 //                ValueOnboarding(nextTapped: onboardNextTapped)
             }
             .tabViewStyle(.page(indexDisplayMode: .automatic))
-            .edgesIgnoringSafeArea(.all)
+//            .edgesIgnoringSafeArea(.all)
 //            .background(.clear)
             
             
         }
+        .edgesIgnoringSafeArea(.all)
 //        .onAppear(perform: {
 //               self.valueVMs.list = ValueOnboardingVMList.getAll()
 //           })

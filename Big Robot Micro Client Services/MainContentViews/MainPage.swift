@@ -20,12 +20,13 @@ struct MainPage: View {
         NavigationView {
             ScrollView {
                 VStack {
+                
                     Text("Samples")
                         .foregroundColor(.white)
                         .font(.custom("Arial", size: 36.0))
                         .fontWeight(.bold)
                         .shadow(color: .black, radius: 3, x: 4, y: 2)
-                        .padding(EdgeInsets(top: 30, leading: 0, bottom: 10, trailing: 0))
+                        .padding(EdgeInsets(top: 42, leading: 0, bottom: 10, trailing: 0))
                     
                     Spacer(minLength: 50)
                     
@@ -44,18 +45,23 @@ struct MainPage: View {
 //                        }
                     
                     
-                    Spacer(minLength: 50)
+                    Spacer(minLength: 35)
                     
-                    ScrollView {
+                    VStack {
                         NavigationLink(destination: WeatherMockView()) {
                             HStack(alignment: .center) {
                                 
                                 
                                 Text("Sample Chart")
-                                    .foregroundColor(Color.black)
-                                    .fontWeight(.heavy)
+                                    .foregroundColor(Color.white)
+                                    .fontWeight(.bold)
                                     .padding()
-                                Spacer()
+                                    .frame(width:190)
+
+                                ZStack {
+                                    Color.black.opacity(0.001)
+                                    Spacer()
+                                }
                                 Image(systemName:"chevron.compact.right").foregroundColor(.white).scaleEffect(1.6)
                                     .padding()
                             }
@@ -63,31 +69,39 @@ struct MainPage: View {
                         .frame(minHeight: 32)
                         HStack(alignment: .center) {
                             Text("Website")
-                                .fontWeight(.heavy)
+                                .fontWeight(.bold)
                                 .padding()
-                            Spacer()
+                            ZStack {
+                                Color.black.opacity(0.001)
+                                Spacer()
+                            }
                             Image(systemName:"chevron.compact.right").padding().foregroundColor(.white).scaleEffect(1.6)
                             
                         }
+                        .frame(minHeight: 32)
                         .onTapGesture {
-                            print("t")
                             openSite(mainURL)
                         }
-                        .frame(minHeight: 32)
                         
                         
                         HStack(alignment: .center) {
                             Text("Onboarding Again")
-                                .fontWeight(.heavy)
+                                .fontWeight(.bold)
                                 .padding()
-                                .onTapGesture {
-                                    restartOnboard()
-                                }
+                                .frame(width:190)
+                                .minimumScaleFactor(0.4)
+                                
                             
-                            Spacer()
+                            ZStack {
+                                Color.black.opacity(0.001)
+                                Spacer()
+                            }
                             Image(systemName:"chevron.compact.right").padding().foregroundColor(.white).scaleEffect(1.6)
                         }
                         .frame(minHeight: 32)
+                        .onTapGesture {
+                            restartOnboard()
+                        }
                     }
                     .background(Color.init(white: 1 , opacity: 0.3))
                     .cornerRadius(5)
@@ -105,12 +119,12 @@ struct MainPage: View {
             .background(Color.init(red: 0.5, green: 0.5, blue: 1.0))
             } //ScrollView
 //            .frame(height: UIScreen.main.bounds.height)
-//            .edgesIgnoringSafeArea(.all)
+            .edgesIgnoringSafeArea(.all)
             
         }//NavigationView
         .edgesIgnoringSafeArea(.all)
         .navigationTitle("Home")
-        .navigationBarTitleDisplayMode(.large)
+        .navigationBarHidden(true)
     }
     
     func openSite(_ url: URL) {
