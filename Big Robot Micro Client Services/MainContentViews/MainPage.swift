@@ -20,7 +20,7 @@ struct MainPage: View {
         NavigationView {
             ScrollView {
                 VStack {
-                
+                    
                     Text("Samples")
                         .foregroundColor(.white)
                         .font(.custom("Arial", size: 36.0))
@@ -38,70 +38,65 @@ struct MainPage: View {
                         .padding(33)
                         .offset(y: bobbing ? 4 : 0)
                         .animation(Animation.easeInOut(duration:3.0), value: bobbing)
-//                        .onAppear() {
-//                            withAnimation(Animation.easeInOut(duration: 3.0).repeatForever()){
-//                                self.bobbing.toggle()
-//                            }
-//                        }
+                    //                        .onAppear() {
+                    //                            withAnimation(Animation.easeInOut(duration: 3.0).repeatForever()){
+                    //                                self.bobbing.toggle()
+                    //                            }
+                    //                        }
                     
                     
                     Spacer(minLength: 35)
                     
                     VStack {
                         NavigationLink(destination: WeatherMockView()) {
-                            HStack(alignment: .center) {
-                                
-                                
+                            HStack() {
                                 Text("Sample Chart")
-                                    .foregroundColor(Color.white)
+                                    .foregroundColor(Color.black)
                                     .fontWeight(.bold)
                                     .padding()
-                                    .frame(width:190)
-
-                                ZStack {
-                                    Color.black.opacity(0.001)
-                                    Spacer()
-                                }
-                                Image(systemName:"chevron.compact.right").foregroundColor(.white).scaleEffect(1.6)
+//                                    .frame(width:190)
+                                Spacer()
+                                Image(systemName:"chevron.compact.right").foregroundColor(.gray).scaleEffect(1.6)
                                     .padding()
                             }
                         }
                         .frame(minHeight: 32)
-                        HStack(alignment: .center) {
-                            Text("Website")
-                                .fontWeight(.bold)
-                                .padding()
-                            ZStack {
-                                Color.black.opacity(0.001)
-                                Spacer()
-                            }
-                            Image(systemName:"chevron.compact.right").padding().foregroundColor(.white).scaleEffect(1.6)
-                            
-                        }
-                        .frame(minHeight: 32)
-                        .onTapGesture {
+                        
+                        Button {
                             openSite(mainURL)
-                        }
-                        
-                        
-                        HStack(alignment: .center) {
-                            Text("Onboarding Again")
-                                .fontWeight(.bold)
-                                .padding()
-                                .frame(width:190)
-                                .minimumScaleFactor(0.4)
-                                
-                            
-                            ZStack {
-                                Color.black.opacity(0.001)
+                        } label: {
+                            HStack(alignment: .center) {
+                                Text("Website")
+                                    .fontWeight(.bold)
+                                    .foregroundColor(.black)
+                                    .padding()
                                 Spacer()
+                                Image(systemName:"chevron.compact.right").padding().foregroundColor(.gray).scaleEffect(1.6)
+                                
                             }
-                            Image(systemName:"chevron.compact.right").padding().foregroundColor(.white).scaleEffect(1.6)
-                        }
-                        .frame(minHeight: 32)
-                        .onTapGesture {
+                            .frame(minHeight: 32)
+                        }.buttonStyle(.borderless)
+                    
+
+                        
+                        
+                        Button {
                             restartOnboard()
+                        } label: {
+                            HStack() {
+                                Text("Onboarding Again")
+                                    .fontWeight(.bold)
+                                    .foregroundColor(.black)
+                                    .padding()
+//                                    .frame(width:190)
+                                    .minimumScaleFactor(0.4)
+                                
+                                Spacer()
+                                Image(systemName:"chevron.compact.right").padding().foregroundColor(.gray).scaleEffect(1.6)
+                            }
+                            .frame(minHeight: 32)
                         }
+                       
                     }
                     .background(Color.init(white: 1 , opacity: 0.3))
                     .cornerRadius(5)
@@ -109,16 +104,16 @@ struct MainPage: View {
                     .padding(EdgeInsets(top: 0, leading: 30, bottom: 0, trailing: 30))
                     
                     Spacer()
-                   
+                    
                 } //Main VStack
                 .frame(height:UIScreen.main.bounds.height)
-//                Spacer()
+                //                Spacer()
                 
                 
-//                .frame(maxHeight: UIScreen.main.bounds.height)
-            .background(Color.init(red: 0.5, green: 0.5, blue: 1.0))
+                //                .frame(maxHeight: UIScreen.main.bounds.height)
+                .background(Color.init(red: 0.5, green: 0.5, blue: 1.0))
             } //ScrollView
-//            .frame(height: UIScreen.main.bounds.height)
+            //            .frame(height: UIScreen.main.bounds.height)
             .edgesIgnoringSafeArea(.all)
             
         }//NavigationView

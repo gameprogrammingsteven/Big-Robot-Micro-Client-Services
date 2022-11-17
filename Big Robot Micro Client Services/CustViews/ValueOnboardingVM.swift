@@ -17,10 +17,12 @@ extension ValueOnboardingVMList {
         return [
             ValueOnboardingVM(title: "Add value to your business with an app."
                               , subHeader: "Your images go here."
-                              , imageName: "app2_2048"),
+                              , imageName: "app2_2048",
+                             showsNextButton: false),
             ValueOnboardingVM(title: "Add an onboard screen like this",
                               subHeader: "And show customers what it does",
-                              imageName: "app2_2048"),
+                              imageName: "app2_2048",
+                             showsNextButton: false),
             ValueOnboardingVM(title: "Let's Get Moving",
                               subHeader: "",
                               imageName: "brm",

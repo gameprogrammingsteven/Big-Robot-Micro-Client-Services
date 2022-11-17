@@ -28,39 +28,40 @@ struct ValueOnboarding: View, Identifiable {
                 .fontWeight(.bold)
 //                .padding(EdgeInsets(top: 15, leading: 0, bottom: 0, trailing: 15))
             
+            Spacer()
             Text(valueOnboardingVM.title)
-                .font(.title)
                 .fontWeight(.bold)
-                .lineLimit(nil)
+                .frame(width:UIScreen.main.bounds.width - 20)
+                .font(.title)
                 .fixedSize(horizontal: true, vertical: false)
+                .lineLimit(4)
                 .foregroundColor(.white)
                 .multilineTextAlignment(.center)
-                .padding(EdgeInsets(top: 20, leading: 16, bottom: 16, trailing: 16))
+                .padding(EdgeInsets(top: 0, leading: 8, bottom: 2, trailing: 4))
                 .shadow(radius: 2, x:4, y:4)
-                .frame(width:UIScreen.main.bounds.width)
 
             
             (valueOnboardingVM.subHeader.isEmpty ? nil :
                 Text(valueOnboardingVM.subHeader)
                 .font(.title3)
                 .fontWeight(.semibold)
-                .lineLimit(nil)
-                .fixedSize(horizontal: true, vertical: false)
+                .lineLimit(4)
+                .frame(width:UIScreen.main.bounds.width - 20)
                 .foregroundColor(.white)
                 .multilineTextAlignment(.center)
                 .padding(EdgeInsets(top: 20, leading: 16, bottom: 16, trailing: 16))
                 .frame(width:UIScreen.main.bounds.width)
             )// if statement
             
-            Spacer()
+//            Spacer()
             (valueOnboardingVM.imageName.isEmpty ? nil :
                 Image(valueOnboardingVM.imageName)
                 .resizable()
-                .frame(width: 225, height: 225)
+                .frame(width: 180, height: 180)
                 .aspectRatio(contentMode: .fit)
                 .padding(EdgeInsets(top: 10, leading: 33, bottom: 20, trailing: 33))
                 )
-            Spacer()
+//            Spacer()
             
             VStack {
                 if(valueOnboardingVM.showsNextButton == true) {
@@ -125,10 +126,6 @@ struct ValueOnboarding: View, Identifiable {
                 
             }
             .padding()
-            
-            
-            
-            
         }
         .padding()
         .frame(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height - 20)
@@ -144,8 +141,8 @@ struct ValueOnboarding_Previews: PreviewProvider {
     static var previews: some View {
 
         ValueOnboarding(valueOnboardingVM: ValueOnboardingVM(title: "Add value to your business with an app.",
-                                                                             subHeader: "Add an onboard screen like this one."
-                                                                             ,imageName: "",
+                                                                             subHeader: "Add an onboard screen like this one. Test sentence and a two."
+                                                                             ,imageName: "app2_2048",
                                                                              showsNextButton: false
                                                                             ) )
     }
