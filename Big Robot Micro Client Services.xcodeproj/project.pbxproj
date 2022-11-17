@@ -34,6 +34,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BD27E1112926C761003911C8 /* Big-Robot-Micro-Client-Services-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Big-Robot-Micro-Client-Services-Info.plist"; sourceTree = SOURCE_ROOT; };
 		BD78C13F291F0CD6005CB910 /* ART.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ART.swift; sourceTree = "<group>"; };
 		BD78C142291F0E51005CB910 /* Experience.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = Experience.rcproject; sourceTree = "<group>"; };
 		BD78C416291D79E10070C2E0 /* Big Robot Micro Client Services.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Big Robot Micro Client Services.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -99,6 +100,7 @@
 		BD78C418291D79E10070C2E0 /* Big Robot Micro Client Services */ = {
 			isa = PBXGroup;
 			children = (
+				BD27E1112926C761003911C8 /* Big-Robot-Micro-Client-Services-Info.plist */,
 				BDD8FED3291F597900DBCBEB /* Resources */,
 				BD78C141291F0E51005CB910 /* AugmentedReality */,
 				BDF89A1A291DF031000CD49F /* Extensions */,
@@ -398,6 +400,7 @@
 				DEVELOPMENT_TEAM = 669VG3KZR8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Big-Robot-Micro-Client-Services-Info.plist";
 				INFOPLIST_KEY_NSCameraUsageDescription = "AR Camera Permission";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -429,6 +432,7 @@
 				DEVELOPMENT_TEAM = 669VG3KZR8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Big-Robot-Micro-Client-Services-Info.plist";
 				INFOPLIST_KEY_NSCameraUsageDescription = "AR Camera Permission";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
